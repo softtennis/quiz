@@ -1,0 +1,19 @@
+.TopPage
+  .LeftSide
+    .LeftSide__title
+      %ul 
+        %li
+          Shortcut key 
+        %li
+          Quiz of
+        %li 
+          Mac book
+  .RightSide
+    .RightSide__top
+      = link_to "#", class: "normal" do
+        = icon('far', 'grin-alt', class: "nmark")
+        Normal Mode
+    .RightSide__bottom
+      = link_to "#", class: "hard" do
+        = icon('far', 'grin-squint-tears', class: "hmark")
+        Hard Mode

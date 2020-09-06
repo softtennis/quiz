@@ -1,0 +1,46 @@
+.TopPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .LeftSide {
+    height: 100vh;
+    width: 500px;
+    background-color: mediumvioletred;
+    @include flex-box();
+
+    &__title {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 80px;
+    }
+  }
+
+  .RightSide {
+    height: 100vh;
+    width: calc(100vw - 500px);
+    @include flex-box();
+    flex-direction: column;
+    
+    &__top {
+      height: 50vh;
+      width: calc(100vw - 500px);
+      background-color: cyan;
+      @include flex-box();
+
+      .normal {
+        @include font();
+      }
+    }
+
+    &__bottom {
+      height: calc(100vh - 50vh);
+      width: calc(100vw - 500px);
+      background-color: dodgerblue;
+      @include flex-box();
+
+      .hard {
+        @include font();
+      }
+    }
+  }
+}
