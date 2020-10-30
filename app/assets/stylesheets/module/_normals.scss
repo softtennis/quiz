@@ -1,0 +1,148 @@
+.Ntop-content {
+  height: 10vh;
+  width: 100vw;
+  background-color: wheat;
+  
+  .Mode {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+
+.Nmiddle-content {
+  height: 80vh;
+  width: 100vw;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .Nproblem {
+    font-size: 40px;
+    background-color: papayawhip;
+    position: absolute;
+    top: 30px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: papayawhip;
+  }
+
+  .choice1 {
+    font-size: 45px;
+    position: absolute;
+    top: 170px;
+    left: 200px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+  }
+
+  .choice2 {
+    font-size: 45px;
+    position: absolute;
+    top: 170px;
+    right: 200px;
+    display: grid;
+    grid-template-columns: 400px ;
+  }
+
+  .choice3 {
+    font-size: 45px;
+    position: absolute;
+    top: 390px;
+    left: 200px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+  }
+
+  .choice4 {
+    font-size: 45px;
+    position: absolute;
+    top: 390px;
+    right: 200px;
+    display: grid;
+    grid-template-columns: 400px ;
+  }
+
+  .c {
+    text-decoration-line: none;
+    border-radius: 20px 20px 20px 20px;
+    background-color: papayawhip;
+    color: black;
+  }
+}
+
+.Nbottom-content {
+  height: 10vh;
+  width: 100vw;
+  background-color:wheat;
+  position: relative;
+
+  .top-page-btn {
+    @include btn;
+  }
+}
+
+.Nindex-middle-content {
+  height: 80vh;
+  width: 100vw;
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .big-categoryA {
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid;
+
+    .exercise-setA {
+      display: flex;
+      
+      .exercise1{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(10,35px);
+      }
+    }
+  }
+
+  .big-categoryB {
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid;
+    
+    .exerciseB {
+      padding: 10px;
+    }
+
+    .exercise2{
+      display: grid;
+      grid-template-columns: 150px 150px;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(10,35px);
+    }
+  }
+}
+
+.ex {
+  font-size: 25px;
+  color: black;
+  text-decoration-line: none;
+}
+
+.categoryA {
+  font-size: 30px;
+}
+
+.categoryB {
+  font-size: 30px;
+}

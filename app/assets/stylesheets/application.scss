@@ -1,5 +1,8 @@
 @import "reset";
 @import "config/config";
-@import "modes";
+@import "module/modes";
+@import "module/normals";
+@import "module/hards";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+// *= require_tree .
