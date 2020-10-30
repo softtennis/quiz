@@ -1,0 +1,27 @@
+.Ntop-content
+  .Mode
+    Normal Mode
+.Nmiddle-content
+  .Nproblem
+    = @questions.each do |question|
+      = question.content
+    -# = @question.content
+  .choice1
+    = link_to "#" , class: "c1" do
+      = @choice1.text
+  .choice2
+    = link_to "#" , class: "c2" do
+      = @choice2.text
+  .choice3
+    = link_to "#" , class: "c3" do
+      = @choice3.text
+  .choice4
+    = link_to "#" , class: "c4" do
+      = @choice4.text
+.Nbottom-content
+  = link_to "/", class: "top-page-btn" do
+    Top Page
+
+
+    -# ルーティングでノーマルズの中にクエスチョンズをネストさせたところ、
+    -# どうやらこのページには飛ばなくなったようだ

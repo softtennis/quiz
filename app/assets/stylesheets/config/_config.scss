@@ -10,8 +10,21 @@
 
 @mixin font() {
   font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  	
+  font-family: 'Creepster', cursive;
+  // font-family: Georgia, 'Times New Roman', Times, serif;
   text-decoration-line: none;
   font-size: 70px;
   color: black;
+}
+
+@mixin btn() {
+  text-decoration-line: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
 }

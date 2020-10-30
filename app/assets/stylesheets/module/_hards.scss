@@ -1,0 +1,88 @@
+.Htop-content {
+  height: 10vh;
+  width: 100vw;
+  background-color:orangered;
+  
+  .Mode {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+
+.Hmiddle-content {
+  height: 80vh;
+  width: 100vw;
+  background-color:darkorange;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .Hproblem {
+    font-size: 80px;
+    background-color: snow;
+    position: absolute;
+    top: 50px;
+  }
+
+  .choice1 {
+    font-size: 70px;
+    background-color: snow;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+  }
+
+  .choice2 {
+    font-size: 70px;
+    background-color: snow;
+    position: absolute;
+    top: 250px;
+    right: 200px;
+  }
+
+  .choice3 {
+    font-size: 70px;
+    background-color: snow;
+    position: absolute;
+    top: 420px;
+    left: 200px;
+  }
+
+  .choice4 {
+    font-size: 70px;
+    background-color: snow;
+    position: absolute;
+    top: 420px;
+    right: 200px;
+  }
+}
+
+.Hbottom-content {
+  height: 10vh;
+  width: 100vw;
+  background-color:orangered;
+  position: relative;
+
+  .top-page-btn {
+    @include btn;
+  }
+}
+
+.Hindexmiddle-content {
+  height: 80vh;
+  width: 100vw;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .try {
+    font-size: 40px;
+    text-decoration-line: none;
+    color: black;
+
+  }
+
+}

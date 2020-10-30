@@ -6,6 +6,10 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    -# %script.src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    = javascript_include_tag 'application'
+    -# = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{href: "https://fonts.googleapis.com/css?family=Creepster", rel: "stylesheet"}
+    -# %link{href: "https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap", rel: "stylesheet"}
   %body
     = yield

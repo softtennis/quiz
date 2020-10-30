@@ -1,0 +1,52 @@
+.Ntop-content
+  .Mode
+    Normal Mode
+.Nmiddle-content
+  .Nproblem
+    = @question.content
+  .choice1
+    = link_to "#" , class: "c" do
+      = @choice1.text
+  .choice2
+    -# - @choice2.each do |choice|
+    = link_to "#" , class: "c" do
+      = @choice2.text
+  .choice3
+    = link_to "#" , class: "c" do
+      = @choice3.text
+  .choice4
+    = link_to "#" , class: "c" do
+      = @choice4.text 
+.Nbottom-content
+  = link_to "/normals", class: "top-page-btn" do
+    Contents
+
+
+    -# ルーティングでノーマルズの中にクエスチョンズをネストさせたところ、
+    -# どうやらこのページに飛ぶようになったようだ。
+    -# しっかり問題は提示されるが・・・font
+
+
+
+-# %ul.grid{style: "display: grid; grid-template-columns: 100px 100px; grid-template-rows: 50px 50px;"}
+-#   %li
+-#     = @sample1
+-#   - @sample2.each do |sample|
+-#     %li
+-#       = sample
+
+-# where.not
+
+
+-# model 
+-# def self.select_choice(number)
+-#     @choice1 = Choice.find(number)
+-#     @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).first(3)
+-# end
+
+
+-# controller
+-# number = params(:normal_id)
+-# Questions.select_choice(number)
+
+-# ↑まだ自分が理解仕切れていないため、リファクタリングはまた今度。
