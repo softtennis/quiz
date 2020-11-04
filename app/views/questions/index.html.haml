@@ -4,24 +4,54 @@
 .Nmiddle-content
   .Nproblem
     = @question.content
-  .choice1
-    = link_to "#" , class: "c" do
-      = @choice1.text
-  .choice2
-    -# - @choice2.each do |choice|
-    = link_to "#" , class: "c" do
-      = @choice2.text
-  .choice3
-    = link_to "#" , class: "c" do
-      = @choice3.text
-  .choice4
-    = link_to "#" , class: "c" do
-      = @choice4.text 
+  - if @answer == 1
+    .choice1.answer
+      .frame
+        = @choice1.text
+  - else
+    .choice1.miss
+      .frame
+        = @choice1.text
+  - if @answer == 2
+    .choice2.answer
+      .frame
+        = @choice2.text
+  - else
+    .choice2.miss
+      .frame
+        = @choice2.text
+  - if @answer == 3
+    .choice3.answer
+      .frame
+        = @choice3.text
+  - else
+    .choice3.miss
+      .frame
+        = @choice3.text
+  - if @answer == 4
+    .choice4.answer
+      .frame
+        = @choice4.text
+  - else
+    .choice4.miss
+      .frame
+        = @choice4.text
 .Nbottom-content
+  - if @question.id == 21
+    = link_to normals_path, class: "nextbutton" do
+      戻る
+  - elsif @question.id == 50
+    = link_to normals_path, class: "nextbutton" do
+      戻る
+  - else
+    = link_to normal_questions_path(@question.id + 1), class: "nextbutton" do
+      次へ進む
   = link_to "/normals", class: "top-page-btn" do
     Contents
 
-
+-# -if @question.id <= 50
+-# -else     
+-#   exit
     -# ルーティングでノーマルズの中にクエスチョンズをネストさせたところ、
     -# どうやらこのページに飛ぶようになったようだ。
     -# しっかり問題は提示されるが・・・font
