@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   # 〜ツイートにコメントを投稿しよう〜　ネストの記事より
     resources :choices, only:[:index]
   end    
-  resources :hards, only: [:index, :new]
-    
+  resources :hards, only: [:index, :new] do
+    resources :questions, only:[:index]
+    resources :choices, only:[:index]
+  end
 end
