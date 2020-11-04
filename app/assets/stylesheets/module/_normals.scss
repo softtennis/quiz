@@ -63,11 +63,21 @@
     grid-template-columns: 400px ;
   }
 
-  .c {
+  .frame {
     text-decoration-line: none;
     border-radius: 20px 20px 20px 20px;
     background-color: papayawhip;
     color: black;
+  }
+
+  .red {
+    color: crimson;
+    font-weight: bold;
+  }
+
+  .blue {
+    color: mediumblue;
+    font-weight: bold;
   }
 }
 
@@ -76,6 +86,26 @@
   width: 100vw;
   background-color:wheat;
   position: relative;
+
+  .nextbutton {
+    font-size: 30px;
+    display: none;
+    height: 50px;
+    width: 150px;
+    margin-left: 47%;
+    position: absolute;
+    margin-top: 12px;
+  }
+
+  .display {
+    font-size: 30px;
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin-left: 47%;
+    position: absolute;
+    margin-top: 12px;
+  }
 
   .top-page-btn {
     @include btn;
