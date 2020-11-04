@@ -249,10 +249,10 @@ class QuestionsController < ApplicationController
     end
     if @question.id == 35
       @answer = 4
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:21).first
-      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:21).where.not(id:@choice1).first
-      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:21).where.not(id:@choice1).where.not(id:@choice2).first
-      @choice4 = Choice.find(21)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:35).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:35).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:35).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(35)
     end
     if @question.id == 36
       @answer = 1
